@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-Regular.eot');
+    src: url('PPMori-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PPMori-Regular.woff2') format('woff2'),
+        url('PPMori-Regular.woff') format('woff'),
+        url('PPMori-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Mori';
+    src: url('PPMori-Regular_1.eot');
+    src: url('PPMori-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('PPMori-Regular_1.woff2') format('woff2'),
+        url('PPMori-Regular_1.woff') format('woff'),
+        url('PPMori-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
