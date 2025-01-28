@@ -99,6 +99,7 @@ item.addEventListener("mouseleave", function(){
  });
 
 
+
 const workVideo = document.querySelector(".seclected-work .item video")
 
 workVideo.addEventListener("mouseenter", function(){
@@ -171,3 +172,23 @@ mentionClient.addEventListener("mousemove", function(dets){
 
 
 
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".seclected-work",
+    start:"top -10%",
+    end:"top -100%",
+    marker:true,
+    scrub:1,
+  },
+});
+
+tl2.to(main,{
+  backgroundColor: "#0f0d0d",
+  duration:0.5
+})
+
+tl2.to(main,{
+  backgroundColor: "#fff",
+  duration:0.5,
+  delay:1
+})

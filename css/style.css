@@ -27,6 +27,9 @@ a{
 
 #main{
     background-color: #0f0d0d;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100%;
 }
 #cursor{
     width: 25px;
@@ -190,7 +193,7 @@ section{
 
 .seclected-work .item img {
     display: block;
-    margin-top: 110px;
+    margin: 110px 0;
 }
 
 .strategy {
@@ -239,6 +242,7 @@ section{
 
 .mention-client {
     padding: 250px 20px;
+    overflow-x: hidden;
 }
 
 .mention-client > h2 {
@@ -267,7 +271,6 @@ section{
 
 .mention-client-content {
     position: relative;
-    overflow: hidden;
 }
 .mention-client-content .client-hover-bg {
     width: 400px;
@@ -277,4 +280,59 @@ section{
     opacity: 0;
     transform: scale(0);
     pointer-events: none;
+}
+
+.site-footer {
+    background: #EDBFFF;
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-top h2 {
+    font-size: min(8vw, 100px);
+}
+
+.contact-btn {
+    display: inline-flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-transform: uppercase;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-btm ul {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+.footer-btm p {
+    font-size: 20px;
+    width: 100%;
+}
+
+.footer-btm li h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.footer-btm li h6 {
+    font-weight: 500;
+    font-size: 14px;
 }
